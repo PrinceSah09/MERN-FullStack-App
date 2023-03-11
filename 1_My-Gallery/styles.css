@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: poppins;
+  text-align: center;
+}
+
+#wrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.container {
+  max-height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container h1 {
+  margin: 20px 20px;
+  text-align: center;
+  /* margin-bottom: 20px; */
+  padding: 20px;
+  box-shadow: 0 0 20px #333;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 3rem;
+  border: 0px solid black;
+  display: inline-block;
+}
+
+.container h1:hover {
+  transition: 0.6s;
+  color: red;
+  box-shadow: 0 0 500px rgb(173, 3, 3);
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  width: 32%;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card img {
+  height: 100%;
+  width: 100%;
+  filter: grayscale(100%);
+  box-shadow: 0 0 20px #333;
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px #333);
+  transition: 0.5s;
+}
+
+.card:hover img {
+  filter: grayscale(0%);
+}
+
+.card figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  width: 100%;
+  height: 20%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  border-radius: 0 0 20px 10px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%);
+  transition: 0.3s;
+}
+.card:hover figcaption {
+  opacity: 1;
+  transform: scale(1.03);
+}
+
+.container #i1:hover {
+  box-shadow: 0 0 50px rgb(246, 237, 60);
+}
+.container #i2:hover {
+  box-shadow: 0 0 50px rgb(228, 145, 2);
+}
+.container #i3:hover {
+  box-shadow: 0 0 50px rgb(154, 153, 158);
+}
+
+.container #i4:hover {
+  box-shadow: 0 0 50px rgb(214, 105, 17);
+}
+
+.container #i5:hover {
+  box-shadow: 0 0 50px rgb(0, 87, 210);
+}
+
+.container #i6:hover {
+  box-shadow: 0 0 50px rgb(228, 145, 2);
+}
+
+.container #i7:hover {
+  box-shadow: 0 0 50px rgb(228, 145, 2);
+}
+.container #i8:hover {
+  box-shadow: 0 0 50px rgb(243, 208, 147);
+}
+
+.container #i9:hover {
+  box-shadow: 0 0 50px rgb(27, 220, 253);
+}
